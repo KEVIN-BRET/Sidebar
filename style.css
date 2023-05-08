@@ -40,11 +40,10 @@ p {
 /* opacité du content */
 .visible ~ .content {
   opacity: 0.3;
-}
+} 
 
 /**------------*/
 .toggle-btn {
-  /* border: 2px solid white; */
   position: absolute;
   top: 30px;
   left: 240px;
@@ -63,23 +62,18 @@ p {
 }
 
 /* transformation du bouton hamburger */
-.toggle-btn.open span:nth-child(1) {
+.toggle-btn.open span {
   position: absolute;
+}
+.toggle-btn.open span:nth-child(1) {
   transform: rotate(45deg);
-  top: 15px;
-  left: -5px;
 }
 .toggle-btn.open span:nth-child(2) {
-  width: 0%;
   opacity: 0;
 }
 .toggle-btn.open span:nth-child(3) {
-  position: absolute;
   transform: rotate(-45deg);
-  top: px;
-  left: -5px;
 }
-/* --- */
 
 li {
   color: #292929;

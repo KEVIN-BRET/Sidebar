@@ -16,7 +16,7 @@ btn.addEventListener("click", () => {
 
 // Disparition de la sidebar au click à coté :
 content.addEventListener("click", () => {
-  sideBar.classList.toggle("visible");
+  sideBar.classList.remove("visible");
   // apparence du "burger" !
   btn.classList.remove("open");
 });
