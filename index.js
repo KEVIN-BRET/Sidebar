@@ -9,6 +9,8 @@ const darkFilter = document.querySelector(".dark-filter");
 btn.addEventListener("click", () => {
   sideBar.classList.toggle("visible");
   darkFilter.classList.toggle("dark-filter-on");
+  // apparence du "burger" !
+  btn.classList.toggle("open");
 });
 
 // Ranger la sidebar si on click sur le contenu principal
@@ -17,10 +19,9 @@ btn.addEventListener("click", () => {
 darkFilter.addEventListener("click", () => {
   sideBar.classList.toggle("visible");
   darkFilter.classList.toggle("dark-filter-on");
+  // apparence du "burger" !
+  btn.classList.remove("open");
 });
 
 // BONUS
 // Créer en css l'hamburger menu qui se transforme en croix
-
-// Aide
-// Priorités en CSS : id > classe > baliseHtml
